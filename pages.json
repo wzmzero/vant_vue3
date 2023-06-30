@@ -1,0 +1,67 @@
+{
+    "easycom" : {
+        "^u-(.*)" : "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+    },
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/home/home",
+		    "style" : {
+		        "navigationBarTitleText" : "首页"
+		    }
+		},
+		{
+		    "path" : "pages/login/index",
+		    "style" : {
+		        "navigationBarTitleText" : "登录"
+		    }
+		},
+
+        {
+            "path" : "pages/user/user",
+            "style" : {
+                "navigationBarTitleText" : "用户"
+            }
+        },
+        // "enablePullDownRefresh": true
+        {
+            "path" : "pages/login/register",
+            "style" : {
+                "navigationBarTitleText" : "注册",
+                "enablePullDownRefresh" : false
+            }
+        },
+        {
+            "path" : "pages/home/echarts",
+            "style" : {}
+        }
+    ],
+    "tabBar" : {
+        "fontSize" : "13px",
+        "color" : "#303133",
+        "selectedColor" : "#19be6b",
+        "backgroundColor" : "#f3f4f6",
+        "list" : [
+            {
+                "pagePath" : "pages/home/home",
+                "iconPath" : "static/home.png",
+                "selectedIconPath" : "static/home2.png",
+                "text" : "首页"
+            },
+            {
+                "pagePath" : "pages/user/user",
+                "iconPath" : "static/user.png",
+                "selectedIconPath" : "static/user2.png",
+                "text" : "用户"
+            }
+        ]
+    },
+    "globalStyle" : {
+        "navigationBarTextStyle" : "black",
+        "navigationBarTitleText" : "uni-app",
+        "navigationBarBackgroundColor" : "#F8F8F8",
+        "backgroundColor" : "#F8F8F8",
+        "usingComponents" : {}
+    },
+    "uniIdRouter" : {}
+}
